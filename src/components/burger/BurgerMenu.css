@@ -1,0 +1,74 @@
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 20px;
+    color: #3E3F43;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    color: #3E3F43;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-button:hover {
+    color: #DAA520;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+    position: fixed;
+    height: 100vh;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: white;
+    padding: 25px 15px 0;
+    font-size: 12px;
+    font-family: 'Nunito-Regular', sans-serif;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b8b7ad;
+    padding: 20px;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #3E3F43;
+    font-size: 16px;
+}
+
+.bm-item:hover {
+    text-decoration: underline;
+    color: #DAA520;
+}
+
+/* Styling of overlay */
+.myOverlay {
+    background: white;
+    opacity: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .bm-menu-wrap {
+        display: none;
+    }
+
+    .bm-burger-button {
+        display: none;
+    }
+}

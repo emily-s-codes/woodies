@@ -1,38 +1,108 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: #E5E5E5; */
+}
+
+@font-face {
+  font-family: 'Nunito-ExtraBold';
+  src: url("./assets/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url("./assets/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Nunito-Light';
+  src: url("./assets/fonts/Nunito-Light.ttf");
+}
+
+p,
+li,
+h2 {
+  font-family: 'Nunito-Regular', sans-serif;
+}
+
+.bold,
+h3,
+h1 {
+  font-family: 'Nunito-ExtraBold', sans-serif;
+}
+
+.light {
+  font-family: 'Nunito-light', sans-serif;
+  font-size: 1rem;
+}
+
+/* 
+#3E3F43
+#333333
+#8D8D8D
+#FFFFFF
+#C4C4C4
+#F9BDBD
+#DAA520
+#F7DEA6
+*/
+/* .pp {
+  background-image: linear-gradient(#F7DEA6, #DAA520);
+} */
+
+/* ===============================
+  in progress
+================================ */
+.inProgressH1 {
   text-align: center;
+  margin: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ===============================
+  home
+================================ */
+
+.container {
+  background-color: #EFEFEF;
+  margin: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ===============================
+  header
+================================ */
+.headerUL {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerLiA a {
+  text-decoration: none;
+  color: #333333;
 }
 
-.App-link {
-  color: #61dafb;
+.headerLiA a:hover {
+  text-decoration: underline;
+  color: #DAA520;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active a {
+  color: #DAA520;
+}
+
+/* ===============================
+  footer
+================================ */
+
+.footerUL {
+  list-style-type: none;
+}
+
+.footerLiA a {
+  text-decoration: none;
+  color: #8D8D8D;
+}
+
+.footerLiA a:hover {
+  text-decoration: underline;
+  color: #333333;
 }
