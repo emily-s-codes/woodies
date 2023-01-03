@@ -1,44 +1,33 @@
 import "./BurgerMenu.css"
-import { stack as Menu } from 'react-burger-menu'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
-// import { GiHamburgerMenu } from "react-icons/gi"
-// import { IoCloseSharp } from "react-icons/io5"
-import BurgerIcon from "../burgerIcon/BurgerIcon";
-import { bool, func } from 'prop-types';
+import { GiHamburgerMenu } from "react-icons/gi"
+import { IoCloseSharp } from "react-icons/io5"
 
 const BurgerMenu = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [icon, setIcon] = useState(true)
-    const [open, setOpen] = useState(false)
+    const [burgerMenu, setBurgerMenu] = useState(false);
 
-    const closeMenu = () => {
-        setMenuOpen(!menuOpen)
-        setIcon(!icon)
-    }
-    BurgerIcon.propTypes = {
-        open: bool.isRequired,
-        setOpen: func.isRequired,
-    }
-    return (
-        <Menu
-            right
-            width={'100%'}
-            onClose={closeMenu}
-            closeMenu={closeMenu}
-            overlayClassName={"myOverlay"}
-            customBurgerIcon={<BurgerIcon menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />}
-            customCrossIcon={false}
-        >
-            <NavLink to='/' onClick={() => closeMenu()}>Home</NavLink>
-            <NavLink to="/about" onClick={() => closeMenu()}>About</NavLink>
-            <NavLink to="/how" onClick={() => closeMenu()}>How it Works</NavLink>
-            <NavLink to="/categories" onClick={() => closeMenu()}>Categories</NavLink>
-            <NavLink to="/testimonials" onClick={() => closeMenu()}>Testimonials</NavLink>
-            <NavLink to="/tbd" onClick={() => closeMenu()}>SIGN UP</NavLink>
-        </Menu >
+    const showBurgerMenu = () => setBurgerMenu(!burgerMenu);
 
-    );
+    return (<>
+        <div className="burgerWrapper">
+            <Link to="#" className="burger">
+                <GiHamburgerMenu onClick={showBurgerMenu} />
+            </Link>
+        </div>
+        <nav className={burgerMenu ? `burger-menu active` : `burger-menu`}>
+            <NavLink to="#" className='menu-X'
+                onClick={showBurgerMenu}>
+                <IoCloseSharp />
+            </NavLink>
+            <NavLink to='/' onClick={showBurgerMenu} className='nav-text'>Home</NavLink>
+            <NavLink to="/about" onClick={showBurgerMenu} className='nav-text'>About</NavLink>
+            <NavLink to="/how" onClick={showBurgerMenu} className='nav-text'>How it Works</NavLink>
+            <NavLink to="/categories" onClick={showBurgerMenu} className='nav-text'>Categories</NavLink>
+            <NavLink to="/testimonials" onClick={showBurgerMenu} className='nav-text'>Testimonials</NavLink>
+            <NavLink to="/tbd" onClick={showBurgerMenu} className='nav-text'>SIGN UP</NavLink>
+        </nav>
+    </>);
 }
 
 export default BurgerMenu;
