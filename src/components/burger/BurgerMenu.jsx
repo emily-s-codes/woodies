@@ -3,23 +3,28 @@ import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoCloseSharp } from "react-icons/io5"
+import logo from "../../assets/img/Logo.png"
 
 const BurgerMenu = () => {
     const [burgerMenu, setBurgerMenu] = useState(false);
 
     const showBurgerMenu = () => setBurgerMenu(!burgerMenu);
 
-    return (<>
+    return (<div className="smMenuWrapper">
         <div className="burgerWrapper">
+            <Link to="/"><img src={logo} alt="woodies" /></Link>
             <Link to="#" className="burger">
                 <GiHamburgerMenu onClick={showBurgerMenu} />
             </Link>
         </div>
         <nav className={burgerMenu ? `burger-menu active` : `burger-menu`}>
-            <NavLink to="#" className='menu-X'
-                onClick={showBurgerMenu}>
-                <IoCloseSharp />
-            </NavLink>
+            <div className="xWrapper">
+                <Link to="/"><img src={logo} alt="woodies" /></Link>
+                <NavLink to="#" className='menu-X'
+                    onClick={showBurgerMenu}>
+                    <IoCloseSharp />
+                </NavLink>
+            </div>
             <NavLink to='/' onClick={showBurgerMenu} className='nav-text'>Home</NavLink>
             <NavLink to="/about" onClick={showBurgerMenu} className='nav-text'>About</NavLink>
             <NavLink to="/how" onClick={showBurgerMenu} className='nav-text'>How it Works</NavLink>
@@ -27,7 +32,7 @@ const BurgerMenu = () => {
             <NavLink to="/testimonials" onClick={showBurgerMenu} className='nav-text'>Testimonials</NavLink>
             <NavLink to="/tbd" onClick={showBurgerMenu} className='nav-text'>SIGN UP</NavLink>
         </nav>
-    </>);
+    </div>);
 }
 
 export default BurgerMenu;
