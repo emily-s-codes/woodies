@@ -1,0 +1,53 @@
+.subscribeWrapper {
+    padding: 200px 100px 100px 100px;
+    background-image: linear-gradient(to bottom, white, #EEEEEE);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.subscribe_left {
+    width: 50%;
+}
+
+.subscribe_right input {
+    padding: 5px;
+    height: 40px;
+    width: 300px;
+    font-family: 'Nunito-Regular', sans-serif;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #DAA520
+}
+
+.subscribe_right button {
+    color: white;
+    font-family: 'Nunito-Regular', sans-serif;
+    background-color: #DAA520;
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #DAA520;
+}
+
+.subscribe_right button:hover {
+    background-color: white;
+    color: #DAA520;
+}
+
+.subscribe_right button:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+@media only screen and (max-width: 991px) {
+    .subscribeWrapper {
+        flex-direction: column;
+    }
+
+    .subscribe_left {
+        text-align: start;
+    }
+}

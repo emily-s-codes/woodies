@@ -30,7 +30,7 @@ const BurgerMenu = () => {
             <NavLink to="/how" onClick={showBurgerMenu} className='nav-text'>How it Works</NavLink>
             <NavLink to="/categories" onClick={showBurgerMenu} className='nav-text'>Categories</NavLink>
             <NavLink to="/testimonials" onClick={showBurgerMenu} className='nav-text'>Testimonials</NavLink>
-            <NavLink to="/tbd" onClick={showBurgerMenu} className='nav-text'>SIGN UP</NavLink>
+            <NavLink to="/tbd" onClick={showBurgerMenu} className='nav-text sign-up'>SIGN UP</NavLink>
         </nav>
     </div>);
 }

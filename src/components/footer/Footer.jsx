@@ -1,6 +1,7 @@
 import "./Footer.css"
 import logo from "../../assets/img/Logo.png"
 import { Link } from "react-router-dom";
+import SubscribeBar from "../subscribe/SubscribeBar";
 
 const Footer = () => {
     const Tel = ({ phone, children }) => {
@@ -13,6 +14,7 @@ const Footer = () => {
 
     return (
         <footer>
+            <SubscribeBar />
             <div className="border"></div>
             <section>
                 <Link to={"/"}><img src={logo} alt="woodies" /></Link>

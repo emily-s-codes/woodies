@@ -1,5 +1,4 @@
 import Footer from "../components/footer/Footer";
-import SubscribeBar from "../components/subscribe/Subscribe";
 import "./how.css"
 
 const HowPage = () => {
@@ -7,7 +6,6 @@ const HowPage = () => {
         <main>
             how
         </main>
-        <SubscribeBar />
         <Footer />
     </div>);
 }

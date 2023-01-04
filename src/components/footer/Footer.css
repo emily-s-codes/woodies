@@ -1,7 +1,5 @@
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     background-image: url("../../assets/img/footer_img.png");
     background-position: right bottom;
     background-size: 100% auto;
@@ -10,7 +8,7 @@ footer {
 
 footer .border {
     border-top: 1px solid #C4C4C4;
-    margin: 20px 250px 0 100px;
+    margin: 0 250px 0 100px;
 }
 
 footer section {
@@ -110,11 +108,12 @@ footer article p {
 
 @media only screen and (max-width: 991px) {
     footer {
+        background-color: #EEEEEE;
         background-image: none;
     }
 
     footer .border {
-        margin: 20px 100px 0 100px;
+        margin: 0 100px 0 100px;
     }
 
     footer section {

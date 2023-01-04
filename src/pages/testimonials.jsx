@@ -1,5 +1,4 @@
 import Footer from "../components/footer/Footer";
-import SubscribeBar from "../components/subscribe/Subscribe";
 import "./testimonials.css"
 
 const TestimonialsPage = () => {
@@ -7,7 +6,6 @@ const TestimonialsPage = () => {
         <main>
             test
         </main>
-        <SubscribeBar />
         <Footer />
     </div>);
 }
