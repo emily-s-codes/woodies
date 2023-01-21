@@ -1,0 +1,33 @@
+.reviewOutlineDiv {
+    width: 380px;
+    height: 280px;
+    border: 1px solid #A8DCEC;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewContentDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.reviewContentDiv p {
+    font-size: 14px;
+}
+
+.reviewContentDiv img {
+    margin: 10px 0;
+}
+
+.reviewerDiv {
+    display: flex;
+    margin: 20px 0;
+}
+
+.reviewerNameDiv p {
+    color: #C4C4C4;
+}

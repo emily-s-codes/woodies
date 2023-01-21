@@ -1,0 +1,51 @@
+.howMain {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.howMain button {
+    color: #E5E5E5;
+    font-family: 'Nunito-Regular', sans-serif;
+    background-color: #DAA520;
+    font-size: 16px;
+    border: 1px solid #DAA520;
+    width: 212px;
+    height: 50px;
+    margin: 60px auto;
+    border-radius: 10px;
+}
+
+.howMain button:hover {
+    background-color: #E5E5E5;
+    color: #DAA520;
+}
+
+.howMain button:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+@media only screen and (max-width:991px) {
+    .howGrid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .howGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .howMain {
+        margin: 0 200px;
+    }
+}

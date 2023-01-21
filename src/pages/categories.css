@@ -1,0 +1,25 @@
+.catMain {
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+    .catMain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .catMain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .catMain {
+        margin: 0 200px;
+    }
+}

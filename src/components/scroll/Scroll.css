@@ -1,0 +1,20 @@
+.scrollButtonWrapper {
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    bottom: 40px;
+    right: 10px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #DAA520;
+}
+
+.scrollButtonWrapper:hover {
+    color: #DAA520;
+}
+
+.scrollButtonWrapper img:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}

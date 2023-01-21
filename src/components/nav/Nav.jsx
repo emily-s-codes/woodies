@@ -3,7 +3,7 @@ import logo from "../../assets/img/Logo.png"
 import { NavLink, Link } from "react-router-dom";
 
 
-const NavBar = (props) => {
+const NavBar = () => {
     return (<nav className="navBar">
         <a href="/"><img src={logo} alt="woodies" /></a>
         <div>

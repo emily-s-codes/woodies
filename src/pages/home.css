@@ -1,9 +1,104 @@
-* {
-    padding: 0;
-    margin: 0;
+.homeWrapper {
+    background-image: linear-gradient(#F7DEA6, #DAA520);
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
-.home {
+.homeNavWrapper {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    background-image: url("../assets/img/homebg.png"), url("../assets/img/pinkbg.png");
+    background-repeat: no-repeat;
+    background-position: 70% 70%, top right;
+    background-size: auto, 25%;
+    overflow: hidden;
+}
+
+.homeNavWrapper .navBar {
+    padding: 40px 0;
+}
+
+.homeMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 100px;
-    background-color: white;
+    gap: 20px;
+    min-height: 100%;
+}
+
+.homeMain img {
+    height: 50vh;
+}
+
+.homeLeft p {
+    margin: 20px 0;
+    font-size: 54px;
+}
+
+.homeLeft button {
+    color: #E5E5E5;
+    font-family: 'Nunito-Regular', sans-serif;
+    background-color: #DAA520;
+    font-size: 16px;
+    border: 1px solid #DAA520;
+    width: 212px;
+    height: 50px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.homeLeft button:hover {
+    background-color: #E5E5E5;
+    color: #DAA520;
+}
+
+.homeLeft button:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+@media only screen and (max-width: 991px) {
+    .homeNavWrapper {
+        background-position: 50% 50%, top right;
+        background-size: auto, 50%;
+    }
+
+    .homeMain {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0px 100px;
+    }
+
+    .homeLeft {
+        text-align: right;
+    }
+
+    .homeLeft button {
+        margin: 0;
+    }
+
+    .homeMain img {
+        height: 30vh;
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .homeLeft p {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .homeLeft h2 {
+        font-size: 20px;
+    }
+
+    .homeLeft p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
 }

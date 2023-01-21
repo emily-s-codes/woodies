@@ -1,0 +1,26 @@
+.inProgressMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inProgressMain button {
+    color: #E5E5E5;
+    font-family: 'Nunito-Regular', sans-serif;
+    background-color: #DAA520;
+    font-size: 16px;
+    border: 1px solid #DAA520;
+    width: 212px;
+    height: 50px;
+    margin: 60px auto;
+    border-radius: 10px;
+}
+
+.inProgressMain button:hover {
+    background-color: #E5E5E5;
+    color: #DAA520;
+}
+
+.inProgressMain button:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}

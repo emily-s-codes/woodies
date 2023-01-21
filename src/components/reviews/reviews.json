@@ -1,0 +1,30 @@
+[
+    {
+        "stars": "stars",
+        "text": "My experience with WOODIES is a complete success, from the modern design to the purchasing experience. Literally everything is top quality. Thank you!",
+        "reviewer": "Sandra Schulz",
+        "company": "Shared Office Space GmbH",
+        "photo": "../../assets/img/review1.jpg"
+    },
+    {
+        "stars": "../assets/img/5stars.png",
+        "text": "I can enthusiastically recommend WOODIES. They made it so easy to fully customize several different pieces of furniture for my home. 10 / 10",
+        "reviewer": "Merle Schmidt",
+        "company": "",
+        "photo": "../../assets/img/review2.jpg"
+    },
+    {
+        "stars": "../assets/img/5stars.png",
+        "text": "I'd like to specifically commend the delivery experience. I've never had such a smooth experience with any other company!",
+        "reviewer": "Paul Müller",
+        "company": "Deutsche Bankers Bank",
+        "photo": "../../assets/img/review3.jpg"
+    },
+    {
+        "stars": "../assets/img/5stars.png",
+        "text": "The designs really spoke to me but the excellent consultation sealed the deal. I am so happy we chose to furnish our office with WOODIES furniture!",
+        "reviewer": "Berthold Brecht",
+        "company": "The Globe, London",
+        "photo": "../../assets/img/review4.jpg"
+    }
+]

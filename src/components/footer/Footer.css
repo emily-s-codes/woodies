@@ -6,6 +6,20 @@ footer {
     background-repeat: no-repeat;
 }
 
+.footerUL {
+    list-style-type: none;
+}
+
+.footerLiA a {
+    text-decoration: none;
+    color: #8D8D8D;
+}
+
+.footerLiA a:hover {
+    text-decoration: underline;
+    color: #333333;
+}
+
 footer .border {
     border-top: 1px solid #C4C4C4;
     margin: 0 250px 0 100px;
@@ -106,6 +120,7 @@ footer article p {
     color: #8D8D8D;
 }
 
+
 @media only screen and (max-width: 991px) {
     footer {
         background-color: #EEEEEE;
@@ -113,7 +128,7 @@ footer article p {
     }
 
     footer .border {
-        margin: 0 100px 0 100px;
+        display: none;
     }
 
     footer section {
@@ -180,11 +195,30 @@ footer article p {
         grid-row: 6/7;
         margin-bottom: 20px;
     }
-
 }
 
 @media only screen and (max-width:575px) {
     footer .border {
         margin: 0 100px;
+    }
+
+    footer section {
+        display: block;
+        margin: 20px 50px;
+    }
+
+    footer section ul {
+        display: block;
+    }
+
+    footer section .h2_2,
+    footer section .ul2,
+    footer section .h2_3,
+    footer section .ul3,
+    footer section .h2_4,
+    footer section .ul4,
+    footer section .h2_5,
+    footer section .ul5 {
+        display: none;
     }
 }

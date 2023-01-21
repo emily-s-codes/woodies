@@ -1,12 +1,12 @@
 import "./BurgerMenu.css"
 import { Link, NavLink } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoCloseSharp } from "react-icons/io5"
 import logo from "../../assets/img/Logo.png"
 
-const BurgerMenu = () => {
-    const [burgerMenu, setBurgerMenu] = useState(false);
+const BurgerMenu = ({ burgerMenu, setBurgerMenu }) => {
+
 
     const showBurgerMenu = () => setBurgerMenu(!burgerMenu);
 

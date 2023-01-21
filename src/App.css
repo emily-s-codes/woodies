@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* background-color: #E5E5E5; */
 }
 
 @font-face {
@@ -22,7 +21,8 @@
 
 p,
 li,
-h2 {
+h2,
+span {
   font-family: 'Nunito-Regular', sans-serif;
 }
 
@@ -37,19 +37,9 @@ h1 {
   font-size: 1rem;
 }
 
-/* 
-#3E3F43
-#333333
-#8D8D8D
-#FFFFFF
-#C4C4C4
-#F9BDBD
-#DAA520
-#F7DEA6
-*/
-/* .pp {
-  background-image: linear-gradient(#F7DEA6, #DAA520);
-} */
+.noScrollbar {
+  overflow-y: hidden;
+}
 
 /* ===============================
   in progress
@@ -57,52 +47,4 @@ h1 {
 .inProgressH1 {
   text-align: center;
   margin: 100px;
-}
-
-/* ===============================
-  home
-================================ */
-
-.container {
-  background-color: #EFEFEF;
-  margin: 100px;
-}
-
-/* ===============================
-  header
-================================ */
-.headerUL {
-  list-style-type: none;
-}
-
-.headerLiA a {
-  text-decoration: none;
-  color: #333333;
-}
-
-.headerLiA a:hover {
-  text-decoration: underline;
-  color: #DAA520;
-}
-
-.active a {
-  color: #DAA520;
-}
-
-/* ===============================
-  footer
-================================ */
-
-.footerUL {
-  list-style-type: none;
-}
-
-.footerLiA a {
-  text-decoration: none;
-  color: #8D8D8D;
-}
-
-.footerLiA a:hover {
-  text-decoration: underline;
-  color: #333333;
 }

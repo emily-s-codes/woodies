@@ -1,5 +1,5 @@
 .subscribeWrapper {
-    padding: 200px 100px 100px 100px;
+    padding: 120px 100px 100px 100px;
     background-image: linear-gradient(to bottom, white, #EEEEEE);
     display: flex;
     align-items: center;
@@ -42,12 +42,31 @@
     box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
+
 @media only screen and (max-width: 991px) {
     .subscribeWrapper {
         flex-direction: column;
+        padding: 80px 50px;
     }
 
     .subscribe_left {
-        text-align: start;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe_left .regular {
+        display: none;
+    }
+
+    .subscribe_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .subscribe_right input,
+    .subscribe_right button {
+        border-radius: 10px;
     }
 }
